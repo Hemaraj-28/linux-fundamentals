@@ -1,0 +1,61 @@
+ Command lines:
+  pwd
+#present working directory
+  cd
+syntax:         cd [dir]
+>change directory
+  ls        #Lists all files and directories in pwd
+syntax:         ls[options] [dir]
+  ..
+syntax:         [command name]..
+#one folder above i.e. 
+ex: 
+PS C:\Users\username> cd
+PS C:\Users\username> cd..
+PS C:\Users>
+To get all usage of a particular commamnd we use
+  man [command name]
+#This will list all the user commands.To ouit press Q
+  cat
+syntax:         cat [options] [file1] [file2]
+#echos input,displays all the contents of the multiple files or dirs
+
+Redirection I/O
+
+cat>test.txt
+#writing to a file 
+To append we use "  >>  "
+To transfer contents from one file to another 
+Ex:  cat [filename]  >  [new filename]
+  mkdir
+make directory
+syntax:         mkdir [dir] 
+To create sub directory a flag -p is used
+EX: 
+mkdir -p names/file1
+For mutliple dirs  
+mkdir -p names/{file1,file2,file3,file4}
+  rmdir    
+remove directory
+syntax: rmdir[options] [dirname]
+  cp
+copy files
+syntax: cp[options] [source] [destination]
+Ex:
+
+cp file1 dir1
+that means to copy file1 in dir1 
+to get rid of overwriting,if the file already exists
+use :  cp -i file1 dir1
+This will ask to overwrite or not
+userinput:  y # it will overwrite
+userinput:  n # Will not overwrite
+
+  mv
+Moves files 
+syntax: mv [options] [source] destination]
+It will also change the name of the files without changing the contents of it.
+
+
+
+  
